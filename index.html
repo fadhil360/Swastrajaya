@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Voice Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+</head>
+
+<body>
+
+<a-scene
+    id="arScene"
+    mindar-image="
+        imageTargetSrc: Character/characters.mind;
+        filterMinCF: 0.0001;
+        filterBeta: 0.001;
+        warmupTolerance: 5;
+        missTolerance: 5;
+    "
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false">
+
+    <a-camera
+        position="0 0 0"
+        look-controls="enabled: false">
+    </a-camera>
+
+    <a-entity mindar-image-target="targetIndex: 0"></a-entity>
+    <a-entity mindar-image-target="targetIndex: 1"></a-entity>
+    <a-entity mindar-image-target="targetIndex: 2"></a-entity>
+
+</a-scene>
+
+<video
+    id="avatarVideo"
+    src="Character/Rahwana/Rahwana_talk.mp4"
+    loop
+    muted
+    playsinline
+    webkit-playsinline
+    preload="auto">
+</video>
+
+<audio id="introAudio" src="Character/Rahwana/intro.wav" preload="auto"></audio>
+<audio id="bgm" src="Audio/Bg.mp3" loop preload="auto"></audio>
+<!-- GEMINI LOG -->
+<button id="geminiLogToggle" class="gemini-log-toggle" type="button">
+    Log Jawaban
+</button>
+
+<div id="geminiLogOverlay" class="gemini-log-overlay">
+    <div class="gemini-log-panel">
+
+        <div class="gemini-log-header">
+            <h3>Log Jawaban</h3>
+            <button
+                id="geminiLogClose"
+                class="gemini-log-close"
+                type="button"
+                title="Close"
+            >&times;</button>
+        </div>
+
+        <div id="geminiLogContent" class="gemini-log-content">
+            <div class="gemini-log-empty">
+                Jawaban Karakter akan ada disini.
+            </div>
+        </div>
+
+    </div>
+</div>
+    <button id="scanAgainButton" type="button" hidden>
+        Scan Again
+    </button>
+
+    <!-- DEBUG -->
+    <div id="debugPanel">
+        <b>AR Debug</b>
+        <div id="debugLog">Waiting for target...</div>
+        <div id="screenInfo">Device: Checking...</div>
+    </div>
+
+    <!-- CHAT INPUT -->
+    <footer class="input-area">
+        <div class="input-wrapper">
+            <textarea id="userInput" placeholder="Ask something..." rows="1"></textarea>
+
+            <button id="mic-button" type="button">🎤</button>
+            <button id="sendBtn" type="button">↑</button>
+        </div>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+    <script src="/arscript.js"></script>
+
+</body>
+</html>
