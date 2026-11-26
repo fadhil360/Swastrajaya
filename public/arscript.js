@@ -1,4 +1,4 @@
-
+const APP_BASE = new URL("./", document.currentScript.src).href;
 document.addEventListener("DOMContentLoaded", () => {
     const scene = document.querySelector("#arScene");
     const video = document.querySelector("#avatarVideo");
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentMode = mode;
         video.src = newSource.startsWith("http")
             ? newSource
-            : window.APP_BASE + newSource.replace(/^\/+/, "");
+            : new URL(newSource.replace(/^\/+/, ""), APP_BASE).href;
         video.load();
 
         try {
@@ -122,7 +122,10 @@ async function activateCharacter(targetIndex, arSystem) {
         introAudio.currentTime = 0;
         introAudio.src = character.introAudio.startsWith("http")
             ? character.introAudio
-            : window.APP_BASE + character.introAudio.replace(/^\/+/, "");
+            : new URL(
+                character.introAudio.replace(/^\/+/, ""),
+                APP_BASE
+            ).href;
         introAudio.load();
 
         await introAudio.play();

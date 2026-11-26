@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR Voice Assistant</title>
 
-    <link rel="stylesheet" href="%BASE_URL%/style.css">
+    <link rel="stylesheet" href="%BASE_URL%style.css">
 
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
@@ -17,7 +17,7 @@
 <a-scene
     id="arScene"
     mindar-image="
-        imageTargetSrc: %BASE_URL%/Character/characters.mind;
+        imageTargetSrc: %BASE_URL%Character/characters.mind;
         filterMinCF: 0.0001;
         filterBeta: 0.001;
         warmupTolerance: 5;
@@ -47,8 +47,8 @@
     preload="auto">
 </video>
 
-<audio id="introAudio" src="%BASE_URL%/Character/Rahwana/intro.wav" preload="auto"></audio>
-<audio id="bgm" src="%BASE_URL%/Audio/Bg.mp3" loop preload="auto"></audio>
+<audio id="introAudio" src="%BASE_URL%Character/Rahwana/intro.wav" preload="auto"></audio>
+<audio id="bgm" src="%BASE_URL%Audio/Bg.mp3" loop preload="auto"></audio>
 
 <!-- GEMINI LOG -->
 <button id="geminiLogToggle" class="gemini-log-toggle" type="button">
