@@ -98,7 +98,10 @@ async function activateCharacter(targetIndex, arSystem) {
         window.selectCharacter(characterId);
 
         const character = window.getActiveCharacter?.();
-
+        console.log("Active character:", character);
+        console.log("Talking video path:", character?.videos?.talking);
+        console.log("Intro audio path:", character?.introAudio);
+        console.log("APP_BASE:", APP_BASE);
         if (!character) {
             throw new Error("Could not load character configuration");
         }
