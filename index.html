@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR Voice Assistant</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="%BASE_URL%public/style.css">
 
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
@@ -17,7 +17,7 @@
 <a-scene
     id="arScene"
     mindar-image="
-        imageTargetSrc: /Swastrajaya/Character/characters.mind
+        imageTargetSrc: %BASE_URL%public/Character/characters.mind;
         filterMinCF: 0.0001;
         filterBeta: 0.001;
         warmupTolerance: 5;
@@ -39,7 +39,7 @@
 
 <video
     id="avatarVideo"
-    src="Character/Rahwana/Rahwana_talk.mp4"
+    src="%BASE_URL%public/Character/Rahwana/Rahwana_talk.mp4"
     loop
     muted
     playsinline
@@ -47,8 +47,9 @@
     preload="auto">
 </video>
 
-<audio id="introAudio" src="Character/Rahwana/intro.wav" preload="auto"></audio>
-<audio id="bgm" src="Audio/Bg.mp3" loop preload="auto"></audio>
+<audio id="introAudio" src="%BASE_URL%public/Character/Rahwana/intro.wav" preload="auto"></audio>
+<audio id="bgm" src="%BASE_URL%public/Audio/Bg.mp3" loop preload="auto"></audio>
+
 <!-- GEMINI LOG -->
 <button id="geminiLogToggle" class="gemini-log-toggle" type="button">
     Log Jawaban
@@ -75,29 +76,30 @@
 
     </div>
 </div>
-    <button id="scanAgainButton" type="button" hidden>
-        Scan Again
-    </button>
 
-    <!-- DEBUG -->
-    <div id="debugPanel">
-        <b>AR Debug</b>
-        <div id="debugLog">Waiting for target...</div>
-        <div id="screenInfo">Device: Checking...</div>
+<button id="scanAgainButton" type="button" hidden>
+    Scan Again
+</button>
+
+<!-- DEBUG -->
+<div id="debugPanel">
+    <b>AR Debug</b>
+    <div id="debugLog">Waiting for target...</div>
+    <div id="screenInfo">Device: Checking...</div>
+</div>
+
+<!-- CHAT INPUT -->
+<footer class="input-area">
+    <div class="input-wrapper">
+        <textarea id="userInput" placeholder="Ask something..." rows="1"></textarea>
+
+        <button id="mic-button" type="button">🎤</button>
+        <button id="sendBtn" type="button">↑</button>
     </div>
+</footer>
 
-    <!-- CHAT INPUT -->
-    <footer class="input-area">
-        <div class="input-wrapper">
-            <textarea id="userInput" placeholder="Ask something..." rows="1"></textarea>
-
-            <button id="mic-button" type="button">🎤</button>
-            <button id="sendBtn" type="button">↑</button>
-        </div>
-    </footer>
-
-    <script type="module" src="/script.js"></script>
-    <script src="/arscript.js"></script>
+<script type="module" src="%BASE_URL%script.js"></script>
+<script src="%BASE_URL%public/arscript.js"></script>
 
 </body>
 </html>

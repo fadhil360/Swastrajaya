@@ -53,7 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ) return;
 
         currentMode = mode;
-        video.src = newSource;
+        video.src = newSource.startsWith("http")
+            ? newSource
+            : window.APP_BASE + newSource.replace(/^\/+/, "");
         video.load();
 
         try {
@@ -118,7 +120,9 @@ async function activateCharacter(targetIndex, arSystem) {
 
         introAudio.pause();
         introAudio.currentTime = 0;
-        introAudio.src = character.introAudio;
+        introAudio.src = character.introAudio.startsWith("http")
+            ? character.introAudio
+            : window.APP_BASE + character.introAudio.replace(/^\/+/, "");
         introAudio.load();
 
         await introAudio.play();

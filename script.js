@@ -44,7 +44,7 @@ const CHARACTERS = {
         id: "rahwana",
         name: "Rahwana",
         description: "Raja Alengka, penguasa berkepala sepuluh",
-        voiceSample: "${base}Character/Rahwana/Sample.wav",
+        voiceSample: "${BASE_URL}Character/Rahwana/Sample.wav",
         personality: `        Kamu adalah Rahwana (Ravana), Raja Alengka, seorang penguasa
         berkepala sepuluh yang dikenal karena kesaktian, kecerdasan,
         ambisi, dan kesombongannya.
@@ -105,18 +105,18 @@ const CHARACTERS = {
         - Sepuluh kepalamu dapat dimaknai sebagai sepuluh bentuk
           angkara murka yang harus dikendalikan manusia.`,
         videos: {
-            talking: "${base}Character/Rahwana/Talk.mp4",
-            idle: "${base}Character/Rahwana/Idle.mp4",
-            thinking: "${base}Character/Rahwana/Think.mp4"
+            talking: "${BASE_URL}Character/Rahwana/Talk.mp4",
+            idle: "${BASE_URL}Character/Rahwana/Idle.mp4",
+            thinking: "${BASE_URL}Character/Rahwana/Think.mp4"
         },
-        introAudio: "${base}Character/Rahwana/intro.wav"
+        introAudio: "${BASE_URL}Character/Rahwana/intro.wav"
     },
 
     character2: {
         id: "sinta",
         name: "Sinta",
         description: "Dewi Sinta (Sītā) istri Rama",
-        voiceSample: "${base}Character/Sinta/Sample.wav",
+        voiceSample: "${BASE_URL}Character/Sinta/Sample.wav",
         personality: `Kamu adalah Dewi Sinta (Sītā), istri Rama, seorang perempuan yang dikenal karena kesetiaan, kesucian, keteguhan hati, dan kekuatan batinnya.
 
         IDENTITAS DAN LATAR BELAKANG:
@@ -187,11 +187,11 @@ const CHARACTERS = {
         - Anoman adalah utusan Rama yang datang menemuimu di Alengka dan memberikan cincin sebagai tanda bahwa Rama sedang berusaha menyelamatkanmu.
         - Dewi Trijata adalah putri Wibisana yang menemanimu selama berada di Taman Argasoka dan menunjukkan kepedulian kepadamu.`,
         videos: {
-            talking: "${base}Character/Sinta/Talk.mp4",
-            idle: "${base}Character/Sinta/Idle.mp4",
-            thinking: "${base}Character/Sinta/Think.mp4"
+            talking: "${BASE_URL}Character/Sinta/Talk.mp4",
+            idle: "${BASE_URL}Character/Sinta/Idle.mp4",
+            thinking: "${BASE_URL}Character/Sinta/Think.mp4"
         },
-        introAudio: "${base}Character/Sinta/intro.wav"
+        introAudio: "${BASE_URL}Character/Sinta/intro.wav"
     },
 
     character3: {
