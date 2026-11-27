@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const debugLog = document.querySelector("#debugLog");
     const introAudio = document.getElementById("introAudio");
     const bgm = document.getElementById("bgm");
-
+    bgm.volume = 0.2;
     const userInput = document.querySelector("#userInput");
     const sendBtn = document.querySelector("#sendBtn");
     const micButton = document.querySelector("#mic-button");

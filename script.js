@@ -713,7 +713,7 @@ async function speakText(text) {
         console.error("Pocket TTS error:", error);
 
     } finally {
-        window.setBgmVolume?.(0.25);
+        window.setBgmVolume?.(0.2);
 
         if (audioUrl) {
             URL.revokeObjectURL(audioUrl);
