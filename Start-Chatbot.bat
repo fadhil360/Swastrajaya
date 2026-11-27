@@ -1,40 +1,34 @@
- @echo off
-title AI Chatbot Launcher
+
+@echo off
+title Pocket TTS + Cloudflare Tunnel
 
 echo ====================================
-echo       Starting AI Chatbot
+echo    Starting Pocket TTS + Tunnel
 echo ====================================
 echo.
 
 :: Start Pocket TTS
-echo Starting Pocket TTS...
-start "Pocket TTS API" cmd /k "uvx pocket-tts serve --config ""hf://anak10thn/pocket-tts-indonesian/indonesian_6l.yaml@6196fe14c6c2108332c16d33c864c8901c044aaa"" --default-voice ""C:\Users\undea\Desktop\Lomba\Chatbot\Sample.wav"" --host 127.0.0.1 --port 8000"
+echo [1/3] Starting Pocket TTS API...
 
-:: Wait for Pocket TTS to initialize
-timeout /t 10 /nobreak >nul
+start "Pocket TTS API" cmd /k "uvx pocket-tts serve --config ""hf://anak10thn/pocket-tts-indonesian/indonesian_6l.yaml@6196fe14c6c2108332c16d33c864c8901c044aaa"" --default-voice ""C:\Users\undea\Desktop\Lomba\Swastrajaya\Sample.wav"" --host 127.0.0.1 --port 8000"
 
-:: Start Vite
-echo Starting Vite...
-start "Vite Chatbot" cmd /k "cd /d C:\Users\undea\Desktop\Lomba\Chatbot && npx vite --host 0.0.0.0"
-
-:: Wait for Vite to initialize
-timeout /t 5 /nobreak >nul
+:: Wait for Pocket TTS
+echo Waiting for Pocket TTS to initialize...
+timeout /t 15 /nobreak >nul
 
 :: Start Cloudflare Tunnel
-echo Starting Cloudflare Tunnel...
-start "MindAR Cloudflare Tunnel" cmd /k "cloudflared tunnel --url http://localhost:5173"
+echo [2/3] Starting Cloudflare Tunnel...
 
-:: Open chatbot locally
-timeout /t 3 /nobreak >nul
-start http://127.0.0.1:5173
+start "Pocket TTS Tunnel" cmd /k "cloudflared tunnel --url http://127.0.0.1:8000"
 
 echo.
+echo [3/3] Startup commands completed.
+echo.
 echo ====================================
-echo       Chatbot startup complete!
+echo Local API: http://127.0.0.1:8000
+echo Public API: Check Pocket TTS Tunnel window
 echo ====================================
 echo.
-echo Pocket TTS: http://127.0.0.1:8000
-echo Vite:       http://127.0.0.1:5173
-echo Cloudflare: Check the Tunnel window
+echo Copy the trycloudflare.com URL from the tunnel window.
 echo.
 pause
