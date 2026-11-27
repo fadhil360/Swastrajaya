@@ -59,7 +59,25 @@ document.addEventListener("DOMContentLoaded", () => {
         video.load();
 
         try {
-            await video.play();
+            await video.play()
+            .then(() => {
+                console.log("Video playback started");
+            })
+            .catch(error => {
+                console.error("Video playback blocked:", error);
+            });
+            video.addEventListener("error", () => {
+                console.error("Video error:", video.error);
+            });
+
+            video.addEventListener("canplay", () => {
+                console.log("Video is ready to play");
+            });
+
+            video.addEventListener("loadeddata", () => {
+                console.log("First video frame loaded");
+            });
+            
             log("Playing " + character.name + ": " + mode);
         } catch (error) {
             console.error("Video playback error:", error);
