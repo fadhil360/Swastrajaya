@@ -5,7 +5,7 @@
 
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const MODEL = "gemini-3.5-flash-lite";
-const TTS_API="https://eyes-independently-army-definition.trycloudflare.com/"
+const TTS_API="https://eyes-independently-army-definition.trycloudflare.com"
 const API_URL =
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
@@ -668,7 +668,7 @@ async function speakText(text) {
             "voice.wav"
         );
 
-        const response = await fetch(`${TTS_API}/tts`, {
+        const response = await fetch(`${TTS_API.replace(/\/+$/, "")}/tts`, {
             method: "POST",
             body: formData
         });
