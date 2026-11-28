@@ -15,171 +15,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const CHARACTERS = {
         rama: {
             id: "rama",
-            name: "Rama",
-            description: "",
-            voiceSample: `Character/Suara A.wav`,
-            personality: personalities.Rama,
-            videos: {
-                talking: `Character/Rama/Talk.mp4`,
-                idle: `Character/Rama/Idle.mp4`,
-                thinking: `Character/Rama/Think.mp4`
-            },
-            introAudio: `Character/Rama/Intro.wav`
         },
         laksmana: {
             id: "laksmana",
-            name: "Laksmana",
-            description: "",
-            voiceSample: `Character/Suara A.wav`,
-            personality: personalities.Laksmana,
-            videos: {
-                talking: `Character/Laksmana/Talk.mp4`,
-                idle: `Character/Laksmana/Idle.mp4`,
-                thinking: `Character/Laksmana/Think.mp4`
-            },
-            introAudio: `Character/Laksmana/Intro.ogg`
         },
         sinta: {
             id: "sinta",
-            name: "Sinta",
-            description: "",
-            voiceSample: `Character/Suara E.wav`,
-            personality: personalities.Sinta,
-            videos: {
-                talking: `Character/Sinta/Talk.mp4`,
-                idle: `Character/Sinta/Idle.mp4`,
-                thinking: `Character/Sinta/Think.mp4`
-            },
-            introAudio: `Character/Sinta/Intro.wav`
         },
         jatayu: {
             id: "jatayu",
-            name: "Jatayu",
-            description: "",
-            voiceSample: `Character/Suara D.wav`,
-            personality: personalities.Jatayu,
-            videos: {
-                talking: `Character/Jatayu/Talk.mp4`,
-                idle: `Character/Jatayu/Idle.mp4`,
-                thinking: `Character/Jatayu/Think.mp4`
-            },
-            introAudio: `Character/Jatayu/Intro.wav`
         },
         hanoman: {
             id: "hanoman",
-            name: "Hanoman",
-            description: "",
-            voiceSample: `Character/Suara A.wav`,
-            personality: personalities.Hanoman,
-            videos: {
-                talking: `Character/Hanoman/Talk.mp4`,
-                idle: `Character/Hanoman/Idle.mp4`,
-                thinking: `Character/Hanoman/Think.mp4`
-            },
-            introAudio: `Character/Hanoman/Intro.mp3`
         },    indrajit: {
             id: "indrajit",
-            name: "Indrajit",
-            description: "",
-            voiceSample: `Character/Suara B.wav`,
-            personality: personalities.Indrajit,
-            videos: {
-                talking: `Character/Indrajit/Talk.mp4`,
-                idle: `Character/Indrajit/Idle.mp4`,
-                thinking: `Character/Indrajit/Think.mp4`
-            },
-            introAudio: `Character/Indrajit/Intro.wav`
         },
         wibisana: {
             id: "wibisana",
-            name: "Wibisana",
-            description: "",
-            voiceSample: `Character/Suara A.wav`,
-            personality: personalities.Wibisana,
-            videos: {
-                talking: `Character/Wibisana/Talk.mp4`,
-                idle: `Character/Wibisana/Idle.mp4`,
-                thinking: `Character/Wibisana/Think.mp4`
-            },
-            introAudio: `Character/Wibisana/Intro.ogg`
         },
         kumbakarna: {
             id: "kumbakarna",
-            name: "Kumbakarna",
-            description: "",
-            voiceSample: `Character/Suara B.wav`,
-            personality: personalities.Kumbakarna,
-            videos: {
-                talking: `Character/Kumbakarna/Talk.mp4`,
-                idle: `Character/Kumbakarna/Idle.mp4`,
-                thinking: `Character/Kumbakarna/Think.mp4`
-            },
-            introAudio: `Character/Kumbakarna/Intro.ogg`
         },
         supranaka: {
-            id: "supranaka",
-            name: "Supranaka",
-            description: "",
-            voiceSample: `Character/Suara F.wav`,
-            personality: personalities.Supranaka,
-            videos: {
-                talking: `Character/Supranaka/Talk.mp4`,
-                idle: `Character/Supranaka/Idle.mp4`,
-                thinking: `Character/Supranaka/Think.mp4`
-            },
-            introAudio: `Character/Supranaka/Intro.mp3`
+            id: "supranaka"
         },
         rahwana: {
             id: "rahwana",
-            name: "Rahwana",
-            description: "",
-            voiceSample: `Character/Suara B.wav`,
-            personality: personalities.Rahwana,
-            videos: {
-                talking: `Character/Rahwana/Talk.mp4`,
-                idle: `Character/Rahwana/Idle.mp4`,
-                thinking: `Character/Rahwana/Think.mp4`
-            },
-            introAudio: `Character/Rahwana/Intro.wav`
         },
         subali: {
             id: "subali",
-            name: "Subali",
-            description: "",
-            voiceSample: `Character/Suara B.wav`,
-            personality: personalities.Subali,
-            videos: {
-                talking: `Character/Subali/Talk.mp4`,
-                idle: `Character/Subali/Idle.mp4`,
-                thinking: `Character/Subali/Think.mp4`
-            },
-            introAudio: `Character/Subali/Intro.ogg`
         },
         sugriwa: {
             id: "sugriwa",
-            name: "Sugriwa",
-            description: "",
-            voiceSample: `Character/Suara B.wav`,
-            personality: personalities.Sugriwa,
-            videos: {
-                talking: `Character/Sugriwa/Talk.mp4`,
-                idle: `Character/Sugriwa/Idle.mp4`,
-                thinking: `Character/Sugriwa/Think.mp4`
-            },
-            introAudio: `Character/Sugriwa/Intro.ogg`
         },
         tara: {
             id: "tara",
-            name: "Tara",
-            description: "",
-            voiceSample: `Character/Suara F.wav`,
-            personality: personalities.Tara,
-            videos: {
-                talking: `Character/Tara/Talk.mp4`,
-                idle: `Character/Tara/Idle.mp4`,
-                thinking: `Character/Tara/Think.mp4`
-            },
-            introAudio: `Character/Tara/Intro.mp3`
         },
     };
     const characterList = Object.values(CHARACTERS);
