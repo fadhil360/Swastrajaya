@@ -44,7 +44,7 @@ const CHARACTERS = {
         id: "rama",
         name: "Rama",
         description: "",
-        voiceSample: `Character/Suara A.wav`,
+        voiceSample: `Audio/Suara A.wav`,
         personality: personalities.Rama,
         videos: {
             talking: `Character/Rama/Talk.mp4`,
@@ -57,7 +57,7 @@ const CHARACTERS = {
         id: "laksmana",
         name: "Laksmana",
         description: "",
-        voiceSample: `Character/Suara A.wav`,
+        voiceSample: `Audio/Suara A.wav`,
         personality: personalities.Laksmana,
         videos: {
             talking: `Character/Laksmana/Talk.mp4`,
@@ -70,7 +70,7 @@ const CHARACTERS = {
         id: "sinta",
         name: "Sinta",
         description: "",
-        voiceSample: `Character/Suara E.wav`,
+        voiceSample: `Audio/Suara E.wav`,
         personality: personalities.Sinta,
         videos: {
             talking: `Character/Sinta/Talk.mp4`,
@@ -83,7 +83,7 @@ const CHARACTERS = {
         id: "jatayu",
         name: "Jatayu",
         description: "",
-        voiceSample: `Character/Suara D.wav`,
+        voiceSample: `Audio/Suara D.wav`,
         personality: personalities.Jatayu,
         videos: {
             talking: `Character/Jatayu/Talk.mp4`,
@@ -96,7 +96,7 @@ const CHARACTERS = {
         id: "hanoman",
         name: "Hanoman",
         description: "",
-        voiceSample: `Character/Suara A.wav`,
+        voiceSample: `Audio/Suara A.wav`,
         personality: personalities.Hanoman,
         videos: {
             talking: `Character/Hanoman/Talk.mp4`,
@@ -108,7 +108,7 @@ const CHARACTERS = {
         id: "indrajit",
         name: "Indrajit",
         description: "",
-        voiceSample: `Character/Suara B.wav`,
+        voiceSample: `Audio/Suara B.wav`,
         personality: personalities.Indrajit,
         videos: {
             talking: `Character/Indrajit/Talk.mp4`,
@@ -121,7 +121,7 @@ const CHARACTERS = {
         id: "wibisana",
         name: "Wibisana",
         description: "",
-        voiceSample: `Character/Suara A.wav`,
+        voiceSample: `Audio/Suara A.wav`,
         personality: personalities.Wibisana,
         videos: {
             talking: `Character/Wibisana/Talk.mp4`,
@@ -134,7 +134,7 @@ const CHARACTERS = {
         id: "kumbakarna",
         name: "Kumbakarna",
         description: "",
-        voiceSample: `Character/Suara B.wav`,
+        voiceSample: `Audio/Suara B.wav`,
         personality: personalities.Kumbakarna,
         videos: {
             talking: `Character/Kumbakarna/Talk.mp4`,
@@ -147,7 +147,7 @@ const CHARACTERS = {
         id: "supranaka",
         name: "Supranaka",
         description: "",
-        voiceSample: `Character/Suara F.wav`,
+        voiceSample: `Audio/Suara F.wav`,
         personality: personalities.Supranaka,
         videos: {
             talking: `Character/Supranaka/Talk.mp4`,
@@ -160,7 +160,7 @@ const CHARACTERS = {
         id: "rahwana",
         name: "Rahwana",
         description: "",
-        voiceSample: `Character/Suara B.wav`,
+        voiceSample: `Audio/Suara B.wav`,
         personality: personalities.Rahwana,
         videos: {
             talking: `Character/Rahwana/Talk.mp4`,
@@ -173,7 +173,7 @@ const CHARACTERS = {
         id: "subali",
         name: "Subali",
         description: "",
-        voiceSample: `Character/Suara B.wav`,
+        voiceSample: `Audio/Suara B.wav`,
         personality: personalities.Subali,
         videos: {
             talking: `Character/Subali/Talk.mp4`,
@@ -186,7 +186,7 @@ const CHARACTERS = {
         id: "sugriwa",
         name: "Sugriwa",
         description: "",
-        voiceSample: `Character/Suara B.wav`,
+        voiceSample: `Audio/Suara B.wav`,
         personality: personalities.Sugriwa,
         videos: {
             talking: `Character/Sugriwa/Talk.mp4`,
@@ -199,7 +199,7 @@ const CHARACTERS = {
         id: "tara",
         name: "Tara",
         description: "",
-        voiceSample: `Character/Suara F.wav`,
+        voiceSample: `Audio/Suara F.wav`,
         personality: personalities.Tara,
         videos: {
             talking: `Character/Tara/Talk.mp4`,
