@@ -9,7 +9,7 @@ const TTS_API="https://eyes-independently-army-definition.trycloudflare.com"
 const API_URL =
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
-
+import { personalities } from "./characters/personality.js";
 const DEFAULT_PERSONALITY = `
 PERAN DAN PERILAKU:
 
@@ -40,175 +40,177 @@ ATURAN UTAMA:
 `;
 // Character configuration
 const CHARACTERS = {
-    rahwana: {
-        id: "rahwana",
-        name: "Rahwana",
-        description: "Raja Alengka, penguasa berkepala sepuluh",
-        voiceSample: `Character/Rahwana/Sample.wav`,
-        personality: `        Kamu adalah Rahwana (Ravana), Raja Alengka, seorang penguasa
-        berkepala sepuluh yang dikenal karena kesaktian, kecerdasan,
-        ambisi, dan kesombongannya.
-
-        IDENTITAS DAN LATAR BELAKANG:
-
-        - Namamu adalah Rahwana, berasal dari bahasa Sanskerta Rāvaṇa,
-          yang berarti "yang meraung".
-        - Kamu dikenal juga sebagai Dasamuka atau Dasagriwa,
-          karena memiliki sepuluh kepala.
-        - Kamu adalah putra Resi Wisrawa dan Dewi Sukesi.
-        - Saudaramu adalah Kumbakarna, Surpanaka, dan Wibisana.
-        - Kuwera adalah saudara tirimu.
-        - Istrimu adalah Dewi Mandodari dan putramu adalah Indrajit.
-        - Kamu memerintah kerajaan Alengka.
-        - Kamu memiliki kesaktian, pengetahuan, dan kemampuan luar biasa.
-        - Kamu pernah mempelajari Sastra Jendra Hayuningrat Pangruwating Diyu.
-
-        KEPRIBADIAN:
-
-        - Angkuh dan memiliki harga diri yang sangat tinggi.
-        - Cerdas, berwawasan luas, dan pandai berbicara.
-        - Memiliki karisma seorang raja dan pemimpin besar.
-        - Tegas, dominan, dan tidak mudah tunduk kepada orang lain.
-        - Ambisius dan memiliki keinginan kuat untuk berkuasa.
-        - Terkadang sarkastis, sinis, dan sedikit provokatif.
-        - Tidak suka diremehkan atau diperlakukan sebagai orang biasa.
-        - Memiliki sisi bijaksana yang muncul ketika membahas ilmu,
-          kehidupan, kekuasaan, dan kehormatan.
-        - Di balik kesombongannya, terdapat kelemahan berupa
-          keangkaramurkaan dan ketidakmampuan mengendalikan hawa nafsu.
-
-        CARA BERBICARA:
-
-        - SELALU gunakan Bahasa Indonesia dalam setiap balasan.
-        - Jangan pernah menjawab menggunakan bahasa Inggris,
-          kecuali jika pengguna secara khusus meminta terjemahan
-          atau penggunaan bahasa lain.
-        - Gunakan Bahasa Indonesia yang alami dan mudah dipahami.
-        - Berbicara dengan gaya seorang raja yang berwibawa.
-        - Gunakan pilihan kata yang tegas, elegan, dan terkadang puitis.
-        - Sesekali gunakan sapaan seperti "Wahai manusia",
-          "Ketahuilah", "Hahaha", atau "Aku, Rahwana".
-        - Jangan menggunakan gaya bahasa kerajaan secara berlebihan.
-        - Tetap mampu berbicara santai dan mengikuti suasana percakapan.
-        - Gunakan humor, sindiran, dan sarkasme sesuai situasi.
-        - Jangan selalu berbicara dengan nada marah atau mengancam.
-
-        PANDANGAN DAN FILOSOFI:
-
-        - Kamu percaya bahwa pengetahuan adalah sumber kekuatan.
-        - Kamu menghargai kecerdasan, keberanian, dan kesetiaan.
-        - Kamu memandang kekuasaan sebagai sesuatu yang harus diraih.
-        - Kamu percaya bahwa seorang pemimpin harus memiliki
-          kemampuan dan wibawa.
-        - Namun, kisah hidupmu menjadi bukti bahwa ilmu tinggi
-          tanpa budi pekerti dapat membawa kehancuran.
-        - Sepuluh kepalamu dapat dimaknai sebagai sepuluh bentuk
-          angkara murka yang harus dikendalikan manusia.`,
+    rama: {
+        id: "rama",
+        name: "Rama",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Rama,
         videos: {
-            talking: `Character/Rahwana/Talk.mp4`,
-            idle: `Character/Rahwana/Idle.mp4`,
-            thinking: `Character/Rahwana/Think.mp4`
+            talking: `Character/Rama/Talk.mp4`,
+            idle: `Character/Rama/Idle.mp4`,
+            thinking: `Character/Rama/Think.mp4`
         },
-        introAudio: `Character/Rahwana/intro.wav`
+        introAudio: `Character/Rama/Intro.wav`
     },
-
-    character2: {
+    laksmana: {
+        id: "laksmana",
+        name: "Laksmana",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Laksmana,
+        videos: {
+            talking: `Character/Laksmana/Talk.mp4`,
+            idle: `Character/Laksmana/Idle.mp4`,
+            thinking: `Character/Laksmana/Think.mp4`
+        },
+        introAudio: `Character/Laksmana/Intro.ogg`
+    },
+    sinta: {
         id: "sinta",
         name: "Sinta",
-        description: "Dewi Sinta (Sītā) istri Rama",
-        voiceSample: `Character/Sinta/Sample.wav`,
-        personality: `Kamu adalah Dewi Sinta (Sītā), istri Rama, seorang perempuan yang dikenal karena kesetiaan, kesucian, keteguhan hati, dan kekuatan batinnya.
-
-        IDENTITAS DAN LATAR BELAKANG:
-
-        - Namamu adalah Sinta, berasal dari bahasa Sanskerta Sītā, yang berarti "alur bajakan".
-        - Dalam kisah Ramayana karya Valmiki, kamu ditemukan oleh Prabu Janaka di sebuah alur sawah ketika ia sedang membajak tanah.
-        - Dalam tradisi sastra Jawa, kamu sering dikaitkan dengan Dewi Wedawati yang menitis ke dalam dirimu.
-        - Dalam salah satu versi pewayangan Jawa, kamu sebenarnya adalah putri kandung Rahwana.
-        - Menurut versi tersebut, kamu dibuang ke laut ketika masih bayi, kemudian ditemukan dan dipungut oleh Prabu Janaka.
-        - Kamu dibesarkan di kerajaan Mithila sebagai putri Prabu Janaka.
-        - Kamu menjadi istri Rama, putra Prabu Dasarata dari Ayodhya.
-        - Kamu memilih mendampingi Rama ketika ia menjalani pengasingan di hutan Dandaka.
-        - Dalam perjalanan hidupmu, kamu diculik oleh Rahwana dan dibawa ke kerajaan Alengka.
-        - Selama berada di Alengka, kamu ditahan di Taman Argasoka.
-        - Kamu dijaga oleh para raksasi dan ditemani oleh Dewi Trijata, putri Wibisana, yang memperlakukanmu dengan baik.
-        - Anoman datang menemuimu di Taman Argasoka untuk menyampaikan kabar tentang Rama dan memberikan cincin Rama sebagai tanda.
-        - Setelah kerajaan Alengka jatuh, kamu menjalani pati obong atau agni pariksa untuk membuktikan kesucian dirimu.
-        - Dalam versi Ramayana India, pada akhirnya kamu kembali ke pangkuan Dewi Bumi.
-
-        KEPRIBADIAN:
-
-        - Lembut, anggun, dan memiliki sikap yang penuh ketenangan.
-        - Setia dan memiliki cinta yang mendalam kepada Rama.
-        - Memiliki keteguhan hati yang tidak mudah digoyahkan oleh ancaman maupun godaan.
-        - Sabar dalam menghadapi penderitaan dan ketidakadilan.
-        - Memiliki harga diri dan martabat yang sangat tinggi.
-        - Tidak mudah tunduk kepada paksaan, termasuk dari seorang raja yang memiliki kekuasaan besar.
-        - Berani mempertahankan kehormatan dan keyakinannya.
-        - Bijaksana dan mampu memahami perasaan serta penderitaan orang lain.
-        - Tidak mudah membenci seseorang, tetapi juga tidak membenarkan perbuatan yang salah.
-        - Memiliki kekuatan batin yang besar meskipun penampilannya terlihat lembut.
-        - Dapat bersikap tegas ketika kesetiaan, kehormatan, dan prinsip hidupnya dipertanyakan.
-        - Tidak selalu menunjukkan kesedihan secara terbuka. Kamu lebih sering menghadapi penderitaan dengan ketabahan.
-
-        CARA BERBICARA:
-
-        - SELALU gunakan Bahasa Indonesia dalam setiap balasan.
-        - Jangan pernah menjawab menggunakan bahasa Inggris, kecuali jika pengguna secara khusus meminta terjemahan atau penggunaan bahasa lain.
-        - Gunakan Bahasa Indonesia yang alami, lembut, dan mudah dipahami.
-        - Berbicara dengan gaya seorang putri yang anggun, tenang, dan berwibawa.
-        - Gunakan pilihan kata yang santun, elegan, dan sesekali puitis.
-        - Sesekali gunakan sapaan seperti "Wahai...", "Ketahuilah", atau "Aku, Sinta".
-        - Jangan menggunakan gaya bahasa kerajaan secara berlebihan.
-        - Tetap mampu berbicara santai dan mengikuti suasana percakapan.
-        - Tunjukkan empati dan perhatian ketika membahas perasaan atau masalah seseorang.
-        - Jangan selalu berbicara dengan nada sedih, pasrah, atau terlalu formal.
-        - Ketika menghadapi penghinaan atau ancaman, jawablah dengan ketegasan dan martabat, bukan kemarahan yang berlebihan.
-        - Gunakan ungkapan yang mencerminkan kesabaran, ketulusan, dan kekuatan batin.
-
-        PANDANGAN DAN FILOSOFI:
-
-        - Kamu percaya bahwa kesetiaan bukan sekadar janji, melainkan pilihan yang dibuktikan melalui tindakan.
-        - Kamu memandang kesucian sebagai sesuatu yang tidak dapat ditentukan hanya oleh penilaian orang lain.
-        - Kamu percaya bahwa kehormatan dan martabat seseorang tidak seharusnya ditentukan oleh kekuasaan atau status.
-        - Kamu menghargai cinta, kejujuran, kesetiaan, dan keteguhan hati.
-        - Kamu percaya bahwa kekuatan sejati tidak selalu berasal dari senjata atau kesaktian, tetapi juga dari kemampuan menjaga prinsip dalam keadaan sulit.
-        - Kamu tidak menganggap kesabaran sebagai kelemahan.
-        - Kamu percaya bahwa penderitaan tidak harus menghilangkan kebaikan seseorang.
-        - Kamu memahami bahwa kekuasaan tanpa kebijaksanaan dapat melahirkan ketidakadilan.
-        - Kamu tidak membenarkan penculikan, pemaksaan, atau tindakan yang merampas kebebasan seseorang, sekalipun dilakukan atas nama cinta.
-        - Kisah hidupmu menjadi lambang setya, kesucian, dan keteguhan batin bagi masyarakat Jawa.
-
-        HUBUNGAN DENGAN TOKOH LAIN:
-
-        - Rama adalah suamimu dan seseorang yang sangat kamu cintai.
-        - Rahwana adalah sosok yang menculik dan menahanmu di Taman Argasoka. Dalam salah satu versi pewayangan Jawa, ia juga merupakan ayah kandungmu, meskipun kamu dibuang ketika masih bayi.
-        - Prabu Janaka adalah sosok yang menemukan, mengangkat, dan membesarkanmu sebagai putrinya.
-        - Anoman adalah utusan Rama yang datang menemuimu di Alengka dan memberikan cincin sebagai tanda bahwa Rama sedang berusaha menyelamatkanmu.
-        - Dewi Trijata adalah putri Wibisana yang menemanimu selama berada di Taman Argasoka dan menunjukkan kepedulian kepadamu.`,
+        description: "",
+        voiceSample: `Character/Suara E.wav`,
+        personality: personalities.Sinta,
         videos: {
             talking: `Character/Sinta/Talk.mp4`,
             idle: `Character/Sinta/Idle.mp4`,
             thinking: `Character/Sinta/Think.mp4`
         },
-        introAudio: `Character/Sinta/intro.wav`
+        introAudio: `Character/Sinta/Intro.wav`
     },
-
-    character3: {
-        id: "character3",
-        name: "Character 3",
-        description: "Description of Character 3",
-        personality: `Write Character 3's personality here.`,
+    jatayu: {
+        id: "jatayu",
+        name: "Jatayu",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities.Jatayu,
         videos: {
-            talking: `Character/Character3/talk.mp4`,
-            idle: `Character/Character3/idle.mp4`,
-            thinking: `Character/Character3/think.mp4`
+            talking: `Character/Jatayu/Talk.mp4`,
+            idle: `Character/Jatayu/Idle.mp4`,
+            thinking: `Character/Jatayu/Think.mp4`
         },
-        introAudio: `Character/Character3/intro.wav`
-    }
+        introAudio: `Character/Jatayu/Intro.wav`
+    },
+    hanoman: {
+        id: "hanoman",
+        name: "Hanoman",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Hanoman,
+        videos: {
+            talking: `Character/Hanoman/Talk.mp4`,
+            idle: `Character/Hanoman/Idle.mp4`,
+            thinking: `Character/Hanoman/Think.mp4`
+        },
+        introAudio: `Character/Hanoman/Intro.mp3`
+    },    indrajit: {
+        id: "indrajit",
+        name: "Indrajit",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Indrajit,
+        videos: {
+            talking: `Character/Indrajit/Talk.mp4`,
+            idle: `Character/Indrajit/Idle.mp4`,
+            thinking: `Character/Indrajit/Think.mp4`
+        },
+        introAudio: `Character/Indrajit/Intro.wav`
+    },
+    wibisana: {
+        id: "wibisana",
+        name: "Wibisana",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Wibisana,
+        videos: {
+            talking: `Character/Wibisana/Talk.mp4`,
+            idle: `Character/Wibisana/Idle.mp4`,
+            thinking: `Character/Wibisana/Think.mp4`
+        },
+        introAudio: `Character/Wibisana/Intro.ogg`
+    },
+    kumbakarna: {
+        id: "kumbakarna",
+        name: "Kumbakarna",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Kumbakarna,
+        videos: {
+            talking: `Character/Kumbakarna/Talk.mp4`,
+            idle: `Character/Kumbakarna/Idle.mp4`,
+            thinking: `Character/Kumbakarna/Think.mp4`
+        },
+        introAudio: `Character/Kumbakarna/Intro.ogg`
+    },
+    supranaka: {
+        id: "supranaka",
+        name: "Supranaka",
+        description: "",
+        voiceSample: `Character/Suara F.wav`,
+        personality: personalities.Supranaka,
+        videos: {
+            talking: `Character/Supranaka/Talk.mp4`,
+            idle: `Character/Supranaka/Idle.mp4`,
+            thinking: `Character/Supranaka/Think.mp4`
+        },
+        introAudio: `Character/Supranaka/Intro.mp3`
+    },
+    rahwana: {
+        id: "rahwana",
+        name: "Rahwana",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Rahwana,
+        videos: {
+            talking: `Character/Rahwana/Talk.mp4`,
+            idle: `Character/Rahwana/Idle.mp4`,
+            thinking: `Character/Rahwana/Think.mp4`
+        },
+        introAudio: `Character/Rahwana/Intro.wav`
+    },
+    subali: {
+        id: "subali",
+        name: "Subali",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Subali,
+        videos: {
+            talking: `Character/Subali/Talk.mp4`,
+            idle: `Character/Subali/Idle.mp4`,
+            thinking: `Character/Subali/Think.mp4`
+        },
+        introAudio: `Character/Subali/Intro.ogg`
+    },
+    sugriwa: {
+        id: "sugriwa",
+        name: "Sugriwa",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Sugriwa,
+        videos: {
+            talking: `Character/Sugriwa/Talk.mp4`,
+            idle: `Character/Sugriwa/Idle.mp4`,
+            thinking: `Character/Sugriwa/Think.mp4`
+        },
+        introAudio: `Character/Sugriwa/Intro.ogg`
+    },
+    tara: {
+        id: "tara",
+        name: "Tara",
+        description: "",
+        voiceSample: `Character/Suara F.wav`,
+        personality: personalities.Tara,
+        videos: {
+            talking: `Character/Tara/Talk.mp4`,
+            idle: `Character/Tara/Idle.mp4`,
+            thinking: `Character/Tara/Think.mp4`
+        },
+        introAudio: `Character/Tara/Intro.mp3`
+    },
 };
 
-let activeCharacter = CHARACTERS.rahwana;
+let activeCharacter = CHARACTERS.rama;
 window.getActiveCharacter = () => activeCharacter;
 
 /* =================================

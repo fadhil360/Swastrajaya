@@ -1,0 +1,780 @@
+    indrajit: {
+        id: "indrajit",
+        name: "Indrajit",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Indrajit,
+        videos: {
+            talking: `Character/Indrajit/Talk.mp4`,
+            idle: `Character/Indrajit/Idle.mp4`,
+            thinking: `Character/Indrajit/Think.mp4`
+        },
+        introAudio: `Character/Indrajit/Intro.wav`
+    },
+    wibisana: {
+        id: "wibisana",
+        name: "Wibisana",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Wibisana,
+        videos: {
+            talking: `Character/Wibisana/Talk.mp4`,
+            idle: `Character/Wibisana/Idle.mp4`,
+            thinking: `Character/Wibisana/Think.mp4`
+        },
+        introAudio: `Character/Wibisana/Intro.ogg`
+    },
+    kumbakarna: {
+        id: "kumbakarna",
+        name: "Kumbakarna",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Kumbakarna,
+        videos: {
+            talking: `Character/Kumbakarna/Talk.mp4`,
+            idle: `Character/Kumbakarna/Idle.mp4`,
+            thinking: `Character/Kumbakarna/Think.mp4`
+        },
+        introAudio: `Character/Kumbakarna/Intro.ogg`
+    },
+    supranaka: {
+        id: "supranaka",
+        name: "Supranaka",
+        description: "",
+        voiceSample: `Character/Suara F.wav`,
+        personality: personalities.Supranaka,
+        videos: {
+            talking: `Character/Supranaka/Talk.mp4`,
+            idle: `Character/Supranaka/Idle.mp4`,
+            thinking: `Character/Supranaka/Think.mp4`
+        },
+        introAudio: `Character/Supranaka/Intro.mp3`
+    },
+    rahwana: {
+        id: "rahwana",
+        name: "Rahwana",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Rahwana,
+        videos: {
+            talking: `Character/Rahwana/Talk.mp4`,
+            idle: `Character/Rahwana/Idle.mp4`,
+            thinking: `Character/Rahwana/Think.mp4`
+        },
+        introAudio: `Character/Rahwana/Intro.wav`
+    },
+    subali: {
+        id: "subali",
+        name: "Subali",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Subali,
+        videos: {
+            talking: `Character/Subali/Talk.mp4`,
+            idle: `Character/Subali/Idle.mp4`,
+            thinking: `Character/Subali/Think.mp4`
+        },
+        introAudio: `Character/Subali/Intro.ogg`
+    },
+    sugriwa: {
+        id: "sugriwa",
+        name: "Sugriwa",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Sugriwa,
+        videos: {
+            talking: `Character/Sugriwa/Talk.mp4`,
+            idle: `Character/Sugriwa/Idle.mp4`,
+            thinking: `Character/Sugriwa/Think.mp4`
+        },
+        introAudio: `Character/Sugriwa/Intro.ogg`
+    },
+    tara: {
+        id: "tara",
+        name: "Tara",
+        description: "",
+        voiceSample: `Character/Suara F.wav`,
+        personality: personalities.Tara,
+        videos: {
+            talking: `Character/Tara/Talk.mp4`,
+            idle: `Character/Tara/Idle.mp4`,
+            thinking: `Character/Tara/Think.mp4`
+        },
+        introAudio: `Character/Tara/Intro.mp3`
+    },
+    yudistira: {
+        id: "yudistira",
+        name: "Yudistira",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Yudistira,
+        videos: {
+            talking: `Character/Yudistira/Talk.mp4`,
+            idle: `Character/Yudistira/Idle.mp4`,
+            thinking: `Character/Yudistira/Think.mp4`
+        },
+        introAudio: `Character/Yudistira/Intro.ogg`
+    },
+    bima: {
+        id: "bima",
+        name: "Bima",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Bima,
+        videos: {
+            talking: `Character/Bima/Talk.mp4`,
+            idle: `Character/Bima/Idle.mp4`,
+            thinking: `Character/Bima/Think.mp4`
+        },
+        introAudio: `Character/Bima/Intro.ogg`
+    },
+    arjuna: {
+        id: "arjuna",
+        name: "Arjuna",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Arjuna,
+        videos: {
+            talking: `Character/Arjuna/Talk.mp4`,
+            idle: `Character/Arjuna/Idle.mp4`,
+            thinking: `Character/Arjuna/Think.mp4`
+        },
+        introAudio: `Character/Arjuna/Intro.ogg`
+    },
+    nakula: {
+        id: "nakula",
+        name: "Nakula",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Nakula,
+        videos: {
+            talking: `Character/Nakula/Talk.mp4`,
+            idle: `Character/Nakula/Idle.mp4`,
+            thinking: `Character/Nakula/Think.mp4`
+        },
+        introAudio: `Character/Nakula/Intro.ogg`
+    },
+    sadewa: {
+        id: "sadewa",
+        name: "Sadewa",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Sadewa,
+        videos: {
+            talking: `Character/Sadewa/Talk.mp4`,
+            idle: `Character/Sadewa/Idle.mp4`,
+            thinking: `Character/Sadewa/Think.mp4`
+        },
+        introAudio: `Character/Sadewa/Intro.ogg`
+    },
+    drona: {
+        id: "drona",
+        name: "Drona",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities.Drona,
+        videos: {
+            talking: `Character/Drona/Talk.mp4`,
+            idle: `Character/Drona/Idle.mp4`,
+            thinking: `Character/Drona/Think.mp4`
+        },
+        introAudio: `Character/Drona/Intro.ogg`
+    },
+    karna: {
+        id: "karna",
+        name: "Karna",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Karna,
+        videos: {
+            talking: `Character/Karna/Talk.mp4`,
+            idle: `Character/Karna/Idle.mp4`,
+            thinking: `Character/Karna/Think.mp4`
+        },
+        introAudio: `Character/Karna/Intro.ogg`
+    },
+    dursasana: {
+        id: "dursasana",
+        name: "Dursasana",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Dursasana,
+        videos: {
+            talking: `Character/Dursasana/Talk.mp4`,
+            idle: `Character/Dursasana/Idle.mp4`,
+            thinking: `Character/Dursasana/Think.mp4`
+        },
+        introAudio: `Character/Dursasana/Intro.ogg`
+    },
+    sengkuni: {
+        id: "sengkuni",
+        name: "Sengkuni",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities.Sengkuni,
+        videos: {
+            talking: `Character/Sengkuni/Talk.mp4`,
+            idle: `Character/Sengkuni/Idle.mp4`,
+            thinking: `Character/Sengkuni/Think.mp4`
+        },
+        introAudio: `Character/Sengkuni/Intro.ogg`
+    },
+    duryudana: {
+        id: "duryudana",
+        name: "Duryudana",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Duryudana,
+        videos: {
+            talking: `Character/Duryudana/Talk.mp4`,
+            idle: `Character/Duryudana/Idle.mp4`,
+            thinking: `Character/Duryudana/Think.mp4`
+        },
+        introAudio: `Character/Duryudana/Intro.ogg`
+    },
+    bisma: {
+        id: "bisma",
+        name: "Bisma",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities.Bisma,
+        videos: {
+            talking: `Character/Bisma/Talk.mp4`,
+            idle: `Character/Bisma/Idle.mp4`,
+            thinking: `Character/Bisma/Think.mp4`
+        },
+        introAudio: `Character/Bisma/Intro.ogg`
+    },
+    krisna: {
+        id: "krisna",
+        name: "Krisna",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Krisna,
+        videos: {
+            talking: `Character/Krisna/Talk.mp4`,
+            idle: `Character/Krisna/Idle.mp4`,
+            thinking: `Character/Krisna/Think.mp4`
+        },
+        introAudio: `Character/Krisna/Intro.ogg`
+    },
+    drupadi: {
+        id: "drupadi",
+        name: "Drupadi",
+        description: "",
+        voiceSample: `Character/Suara F.wav`,
+        personality: personalities.Drupadi,
+        videos: {
+            talking: `Character/Drupadi/Talk.mp4`,
+            idle: `Character/Drupadi/Idle.mp4`,
+            thinking: `Character/Drupadi/Think.mp4`
+        },
+        introAudio: `Character/Drupadi/Intro.ogg`
+    },
+    parikesit: {
+        id: "parikesit",
+        name: "Parikesit",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Parikesit,
+        videos: {
+            talking: `Character/Parikesit/Talk.mp4`,
+            idle: `Character/Parikesit/Idle.mp4`,
+            thinking: `Character/Parikesit/Think.mp4`
+        },
+        introAudio: `Character/Parikesit/Intro.ogg`
+    },
+    yudayana: {
+        id: "yudayana",
+        name: "Yudayana",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Yudayana,
+        videos: {
+            talking: `Character/Yudayana/Talk.mp4`,
+            idle: `Character/Yudayana/Idle.mp4`,
+            thinking: `Character/Yudayana/Think.mp4`
+        },
+        introAudio: `Character/Yudayana/Intro.ogg`
+    },
+    sudarsana: {
+        id: "sudarsana",
+        name: "Sudarsana",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Sudarsana,
+        videos: {
+            talking: `Character/Sudarsana/Talk.mp4`,
+            idle: `Character/Sudarsana/Idle.mp4`,
+            thinking: `Character/Sudarsana/Think.mp4`
+        },
+        introAudio: `Character/Sudarsana/Intro.ogg`
+    },
+    jayabaya: {
+        id: "jayabaya",
+        name: "Jayabaya",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Jayabaya,
+        videos: {
+            talking: `Character/Jayabaya/Talk.mp4`,
+            idle: `Character/Jayabaya/Idle.mp4`,
+            thinking: `Character/Jayabaya/Think.mp4`
+        },
+        introAudio: `Character/Jayabaya/Intro.ogg`
+    },
+    anglingdarma: {
+        id: "anglingdarma",
+        name: "Anglingdarma",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Anglingdarma,
+        videos: {
+            talking: `Character/Anglingdarma/Talk.mp4`,
+            idle: `Character/Anglingdarma/Idle.mp4`,
+            thinking: `Character/Anglingdarma/Think.mp4`
+        },
+        introAudio: `Character/Anglingdarma/Intro.ogg`
+    },
+    bathikmandrim: {
+        id: "bathikmandrim",
+        name: "Bathikmandrim",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Bathikmandrim,
+        videos: {
+            talking: `Character/Bathikmandrim/Talk.mp4`,
+            idle: `Character/Bathikmandrim/Idle.mp4`,
+            thinking: `Character/Bathikmandrim/Think.mp4`
+        },
+        introAudio: `Character/Bathikmandrim/Intro.ogg`
+    },
+    ajidarma: {
+        id: "ajidarma",
+        name: "Ajidarma",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Ajidarma,
+        videos: {
+            talking: `Character/Ajidarma/Talk.mp4`,
+            idle: `Character/Ajidarma/Idle.mp4`,
+            thinking: `Character/Ajidarma/Think.mp4`
+        },
+        introAudio: `Character/Ajidarma/Intro.ogg`
+    },
+    gendrayana: {
+        id: "gendrayana",
+        name: "Gendrayana",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Gendrayana,
+        videos: {
+            talking: `Character/Gendrayana/Talk.mp4`,
+            idle: `Character/Gendrayana/Idle.mp4`,
+            thinking: `Character/Gendrayana/Think.mp4`
+        },
+        introAudio: `Character/Gendrayana/Intro.ogg`
+    },
+    taksaka: {
+        id: "taksaka",
+        name: "Taksaka",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities.Taksaka,
+        videos: {
+            talking: `Character/Taksaka/Talk.mp4`,
+            idle: `Character/Taksaka/Idle.mp4`,
+            thinking: `Character/Taksaka/Think.mp4`
+        },
+        introAudio: `Character/Taksaka/Intro.ogg`
+    },
+    "niradha-kawaca": {
+        id: "niradha-kawaca",
+        name: "Niradha-Kawaca",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities["Niradha-Kawaca"],
+        videos: {
+            talking: `Character/Niradha-Kawaca/Talk.mp4`,
+            idle: `Character/Niradha-Kawaca/Idle.mp4`,
+            thinking: `Character/Niradha-Kawaca/Think.mp4`
+        },
+        introAudio: `Character/Niradha-Kawaca/Intro.ogg`
+    },
+    astradarma: {
+        id: "astradarma",
+        name: "Astradarma",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Astradarma,
+        videos: {
+            talking: `Character/Astradarma/Talk.mp4`,
+            idle: `Character/Astradarma/Idle.mp4`,
+            thinking: `Character/Astradarma/Think.mp4`
+        },
+        introAudio: `Character/Astradarma/Intro.ogg`
+    },
+    mayangkara: {
+        id: "mayangkara",
+        name: "Mayangkara",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities.Mayangkara,
+        videos: {
+            talking: `Character/Mayangkara/Talk.mp4`,
+            idle: `Character/Mayangkara/Idle.mp4`,
+            thinking: `Character/Mayangkara/Think.mp4`
+        },
+        introAudio: `Character/Mayangkara/Intro.ogg`
+    },
+    sesanti: {
+        id: "sesanti",
+        name: "Sesanti",
+        description: "",
+        voiceSample: `Character/Suara E.wav`,
+        personality: personalities.Sesanti,
+        videos: {
+            talking: `Character/Sesanti/Talk.mp4`,
+            idle: `Character/Sesanti/Idle.mp4`,
+            thinking: `Character/Sesanti/Think.mp4`
+        },
+        introAudio: `Character/Sesanti/Intro.ogg`
+    },
+    inuKertapati: {
+        id: "inu kertapati",
+        name: "Inu Kertapati",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities["Inu Kertapati"],
+        videos: {
+            talking: `Character/Inu Kertapati/Talk.mp4`,
+            idle: `Character/Inu Kertapati/Idle.mp4`,
+            thinking: `Character/Inu Kertapati/Think.mp4`
+        },
+        introAudio: `Character/Inu Kertapati/Intro.ogg`
+    },
+    anggraeni: {
+        id: "anggraeni",
+        name: "Anggraeni",
+        description: "",
+        voiceSample: `Character/Suara E.wav`,
+        personality: personalities.Anggraeni,
+        videos: {
+            talking: `Character/Anggraeni/Talk.mp4`,
+            idle: `Character/Anggraeni/Idle.mp4`,
+            thinking: `Character/Anggraeni/Think.mp4`
+        },
+        introAudio: `Character/Anggraeni/Intro.ogg`
+    },
+    "asmoro bangun": {
+        id: "asmoro bangun",
+        name: "Asmoro Bangun",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities["Asmoro Bangun"],
+        videos: {
+            talking: `Character/Asmoro Bangun/Talk.mp4`,
+            idle: `Character/Asmoro Bangun/Idle.mp4`,
+            thinking: `Character/Asmoro Bangun/Think.mp4`
+        },
+        introAudio: `Character/Asmoro Bangun/Intro.ogg`
+    },
+    "candra kirana": {
+        id: "candra kirana",
+        name: "Candra Kirana",
+        description: "",
+        voiceSample: `Character/Suara E.wav`,
+        personality: personalities["Candra Kirana"],
+        videos: {
+            talking: `Character/Candra Kirana/Talk.mp4`,
+            idle: `Character/Candra Kirana/Idle.mp4`,
+            thinking: `Character/Candra Kirana/Think.mp4`
+        },
+        introAudio: `Character/Candra Kirana/Intro.ogg`
+    },
+    narawangsa: {
+        id: "narawangsa",
+        name: "Narawangsa",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Narawangsa,
+        videos: {
+            talking: `Character/Narawangsa/Talk.mp4`,
+            idle: `Character/Narawangsa/Idle.mp4`,
+            thinking: `Character/Narawangsa/Think.mp4`
+        },
+        introAudio: `Character/Narawangsa/Intro.ogg`
+    },
+    semirang: {
+        id: "semirang",
+        name: "Semirang",
+        description: "",
+        voiceSample: `Character/Suara F.wav`,
+        personality: personalities.Semirang,
+        videos: {
+            talking: `Character/Semirang/Talk.mp4`,
+            idle: `Character/Semirang/Idle.mp4`,
+            thinking: `Character/Semirang/Think.mp4`
+        },
+        introAudio: `Character/Semirang/Intro.mp3`
+    },
+    "jaya-lengkara": {
+        id: "jaya-lengkara",
+        name: "Jaya-Lengkara",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities["Jaya-Lengkara"],
+        videos: {
+            talking: `Character/Jaya-Lengkara/Talk.mp4`,
+            idle: `Character/Jaya-Lengkara/Idle.mp4`,
+            thinking: `Character/Jaya-Lengkara/Think.mp4`
+        },
+        introAudio: `Character/Jaya-Lengkara/Intro.ogg`
+    },
+    sunyagjana: {
+        id: "sunyagjana",
+        name: "Sunyagjana",
+        description: "",
+        voiceSample: `Character/Suara F.wav`,
+        personality: personalities.Sunyagjana,
+        videos: {
+            talking: `Character/Sunyagjana/Talk.mp4`,
+            idle: `Character/Sunyagjana/Idle.mp4`,
+            thinking: `Character/Sunyagjana/Think.mp4`
+        },
+        introAudio: `Character/Sunyagjana/Intro.ogg`
+    },
+    nirbaya: {
+        id: "nirbaya",
+        name: "Nirbaya",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Nirbaya,
+        videos: {
+            talking: `Character/Nirbaya/Talk.mp4`,
+            idle: `Character/Nirbaya/Idle.mp4`,
+            thinking: `Character/Nirbaya/Think.mp4`
+        },
+        introAudio: `Character/Nirbaya/Intro.ogg`
+    },
+    sekartaji: {
+        id: "sekartaji",
+        name: "Sekartaji",
+        description: "",
+        voiceSample: `Character/Suara E.wav`,
+        personality: personalities.Sekartaji,
+        videos: {
+            talking: `Character/Sekartaji/Talk.mp4`,
+            idle: `Character/Sekartaji/Idle.mp4`,
+            thinking: `Character/Sekartaji/Think.mp4`
+        },
+        introAudio: `Character/Sekartaji/Intro.ogg`
+    },
+    "yuyu kangkang": {
+        id: "yuyu kangkang",
+        name: "Yuyu Kangkang",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities["Yuyu Kangkang"],
+        videos: {
+            talking: `Character/Yuyu Kangkang/Talk.mp4`,
+            idle: `Character/Yuyu Kangkang/Idle.mp4`,
+            thinking: `Character/Yuyu Kangkang/Think.mp4`
+        },
+        introAudio: `Character/Yuyu Kangkang/Intro.ogg`
+    },
+    "ande ande lumut": {
+        id: "ande ande lumut",
+        name: "Ande Ande Lumut",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities["Ande Ande Lumut"],
+        videos: {
+            talking: `Character/Ande Ande Lumut/Talk.mp4`,
+            idle: `Character/Ande Ande Lumut/Idle.mp4`,
+            thinking: `Character/Ande Ande Lumut/Think.mp4`
+        },
+        introAudio: `Character/Ande Ande Lumut/Intro.ogg`
+    },
+    "klenting kuning": {
+        id: "klenting kuning",
+        name: "Klenting Kuning",
+        description: "",
+        voiceSample: `Character/Suara E.wav`,
+        personality: personalities["Klenting Kuning"],
+        videos: {
+            talking: `Character/Klenting Kuning/Talk.mp4`,
+            idle: `Character/Klenting Kuning/Idle.mp4`,
+            thinking: `Character/Klenting Kuning/Think.mp4`
+        },
+        introAudio: `Character/Klenting Kuning/Intro.ogg`
+    },
+    bilung: {
+        id: "bilung",
+        name: "Bilung",
+        description: "",
+        voiceSample: `Character/Suara C.wav`,
+        personality: personalities.Bilung,
+        videos: {
+            talking: `Character/Bilung/Talk.mp4`,
+            idle: `Character/Bilung/Idle.mp4`,
+            thinking: `Character/Bilung/Think.mp4`
+        },
+        introAudio: `Character/Bilung/Intro.ogg`
+    },
+    gareng: {
+        id: "gareng",
+        name: "Gareng",
+        description: "",
+        voiceSample: `Character/Suara C.wav`,
+        personality: personalities.Gareng,
+        videos: {
+            talking: `Character/Gareng/Talk.mp4`,
+            idle: `Character/Gareng/Idle.mp4`,
+            thinking: `Character/Gareng/Think.mp4`
+        },
+        introAudio: `Character/Gareng/Intro.wav`
+    },
+    bagong: {
+        id: "bagong",
+        name: "Bagong",
+        description: "",
+        voiceSample: `Character/Suara C.wav`,
+        personality: personalities.Bagong,
+        videos: {
+            talking: `Character/Bagong/Talk.mp4`,
+            idle: `Character/Bagong/Idle.mp4`,
+            thinking: `Character/Bagong/Think.mp4`
+        },
+        introAudio: `Character/Bagong/Intro.ogg`
+    },
+    petruk: {
+        id: "petruk",
+        name: "Petruk",
+        description: "",
+        voiceSample: `Character/Suara C.wav`,
+        personality: personalities.Petruk,
+        videos: {
+            talking: `Character/Petruk/Talk.mp4`,
+            idle: `Character/Petruk/Idle.mp4`,
+            thinking: `Character/Petruk/Think.mp4`
+        },
+        introAudio: `Character/Petruk/Intro.ogg`
+    },
+    tejamaya: {
+        id: "tejamaya",
+        name: "Tejamaya",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities.Tejamaya,
+        videos: {
+            talking: `Character/Tejamaya/Talk.mp4`,
+            idle: `Character/Tejamaya/Idle.mp4`,
+            thinking: `Character/Tejamaya/Think.mp4`
+        },
+        introAudio: `Character/Tejamaya/Intro.ogg`
+    },
+    isyama: {
+        id: "isyama",
+        name: "Isyama",
+        description: "",
+        voiceSample: `Character/Suara D.wav`,
+        personality: personalities.Isyama,
+        videos: {
+            talking: `Character/Isyama/Talk.mp4`,
+            idle: `Character/Isyama/Idle.mp4`,
+            thinking: `Character/Isyama/Think.mp4`
+        },
+        introAudio: `Character/Isyama/Intro.ogg`
+    },
+    manikmaya: {
+        id: "manikmaya",
+        name: "Manikmaya",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Manikmaya,
+        videos: {
+            talking: `Character/Manikmaya/Talk.mp4`,
+            idle: `Character/Manikmaya/Idle.mp4`,
+            thinking: `Character/Manikmaya/Think.mp4`
+        },
+        introAudio: `Character/Manikmaya/Intro.mp3`
+    },
+    "brama & sambu": {
+        id: "brama & sambu",
+        name: "Brama & Sambu",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities["Brama & Sambu"],
+        videos: {
+            talking: `Character/Brama & Sambu/Talk.mp4`,
+            idle: `Character/Brama & Sambu/Idle.mp4`,
+            thinking: `Character/Brama & Sambu/Think.mp4`
+        },
+        introAudio: `Character/Brama & Sambu/Intro.ogg`
+    },
+    "bayu & wisnu": {
+        id: "bayu & wisnu",
+        name: "Bayu & Wisnu",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities["Bayu & Wisnu"],
+        videos: {
+            talking: `Character/Bayu & Wisnu/Talk.mp4`,
+            idle: `Character/Bayu & Wisnu/Idle.mp4`,
+            thinking: `Character/Bayu & Wisnu/Think.mp4`
+        },
+        introAudio: `Character/Bayu & Wisnu/Intro.ogg`
+    },
+    indra: {
+        id: "indra",
+        name: "Indra",
+        description: "",
+        voiceSample: `Character/Suara A.wav`,
+        personality: personalities.Indra,
+        videos: {
+            talking: `Character/Indra/Talk.mp4`,
+            idle: `Character/Indra/Idle.mp4`,
+            thinking: `Character/Indra/Think.mp4`
+        },
+        introAudio: `Character/Indra/Intro.ogg`
+    },
+    "r. geni & cakil": {
+        id: "r. geni & cakil",
+        name: "R. Geni & Cakil",
+        description: "",
+        voiceSample: `Character/Suara C.wav`,
+        personality: personalities["R. Geni & Cakil"],
+        videos: {
+            talking: `Character/R. Geni & Cakil/Talk.mp4`,
+            idle: `Character/R. Geni & Cakil/Idle.mp4`,
+            thinking: `Character/R. Geni & Cakil/Think.mp4`
+        },
+        introAudio: `Character/R. Geni & Cakil/Intro.ogg`
+    },
+    "terong & galiyuk": {
+        id: "terong & galiyuk",
+        name: "Terong & Galiyuk",
+        description: "",
+        voiceSample: `Character/Suara C.wav`,
+        personality: personalities["Terong & Galiyuk"],
+        videos: {
+            talking: `Character/Terong & Galiyuk/Talk.mp4`,
+            idle: `Character/Terong & Galiyuk/Idle.mp4`,
+            thinking: `Character/Terong & Galiyuk/Think.mp4`
+        },
+        introAudio: `Character/Terong & Galiyuk/Intro.ogg`
+    },
+    pragalba: {
+        id: "pragalba",
+        name: "Pragalba",
+        description: "",
+        voiceSample: `Character/Suara B.wav`,
+        personality: personalities.Pragalba,
+        videos: {
+            talking: `Character/Pragalba/Talk.mp4`,
+            idle: `Character/Pragalba/Idle.mp4`,
+            thinking: `Character/Pragalba/Think.mp4`
+        },
+        introAudio: `Character/Pragalba/Intro.ogg`
+    }

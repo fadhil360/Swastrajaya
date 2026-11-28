@@ -1,4 +1,5 @@
 const APP_BASE = new URL("./", document.currentScript.src).href;
+import { characters } from "./Character/script.js";
 document.addEventListener("DOMContentLoaded", () => {
     const scene = document.querySelector("#arScene");
     const video = document.querySelector("#avatarVideo");
@@ -11,12 +12,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const sendBtn = document.querySelector("#sendBtn");
     const micButton = document.querySelector("#mic-button");
 
-    const TARGET_CHARACTERS = {
-        0: "rahwana",
-        1: "character2",
-        2: "character3"
-    };
+    const characterList = Object.values(characters);
 
+    const TARGET_CHARACTERS = Object.fromEntries(
+        characterList.map((character, index) => [
+            index,
+            character.id
+        ])
+    );
+    const targetCount = characterList.length;
+
+    for (let i = 0; i < targetCount; i++) {
+        const target = document.createElement("a-entity");
+
+        target.setAttribute("mindar-image-target", `targetIndex: ${i}`);
+
+        scene.appendChild(target);
+    }
     let targetFound = false;
     let videoActive = false;
     let currentMode = "";
