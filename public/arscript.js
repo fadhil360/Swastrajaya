@@ -28,7 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
         target.setAttribute("mindar-image-target", `targetIndex: ${i}`);
 
         scene.appendChild(target);
+        console.log(`Created target ${i}:`, target);
     }
+    console.log("Character List:", characterList);
+    console.log("Target Characters:", TARGET_CHARACTERS);
     let targetFound = false;
     let videoActive = false;
     let currentMode = "";
