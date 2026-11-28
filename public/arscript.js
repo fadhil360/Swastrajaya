@@ -1,5 +1,5 @@
 const APP_BASE = new URL("./", document.currentScript.src).href;
-import { characters } from "./Character/script.js";
+import { characters } from "../../script.js";
 document.addEventListener("DOMContentLoaded", () => {
     const scene = document.querySelector("#arScene");
     const video = document.querySelector("#avatarVideo");
