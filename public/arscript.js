@@ -1,6 +1,7 @@
 const APP_BASE = new URL("./", document.currentScript.src).href;
 import { characters } from "../../script.js";
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("Script started!");
     const scene = document.querySelector("#arScene");
     const video = document.querySelector("#avatarVideo");
     const scanButton = document.querySelector("#scanAgainButton");
