@@ -9,7 +9,7 @@ const TTS_API="https://eyes-independently-army-definition.trycloudflare.com"
 const API_URL =
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
-import { personalities } from "./characters/personality.js";
+import { personalities } from "./Character/personality.js";
 const DEFAULT_PERSONALITY = `
 PERAN DAN PERILAKU:
 
